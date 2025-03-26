@@ -1,10 +1,10 @@
 import streamlit as st
 from generator import Generator 
 
-st.set_page_config(page_title="CampusConnect: AI-Powered Student Discovery")
+st.set_page_config(page_title="GenAI Agentic Application")
 
 response_generator = Generator()
-st.title("AI Search Engine 🧑💻")
+st.title("CampusConnect: AI-Powered Student Discovery 🧑💻")
 
 # Initialize chat history with a welcome message
 if "messages" not in st.session_state:

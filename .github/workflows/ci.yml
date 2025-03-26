@@ -1,0 +1,21 @@
+name: Run Python Script
+
+on: [push]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Create .env File
+        run: echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" > .env 
+
+# git rm --cached .env  # Remove from Git but keep locally
+# echo ".env" >> .gitignore  # Add to .gitignore
+# git commit --amend -m "Removed .env file from commit"
+# git push --force origin main        

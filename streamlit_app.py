@@ -34,7 +34,7 @@ if prompt := st.chat_input("Your question"):
             
             # Generate response with context and history
             response = response_generator.chat(
-                user_query=prompt,
+                query=prompt,
                 chat_history=chat_history
             )
             

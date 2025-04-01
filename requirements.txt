@@ -1,7 +1,8 @@
-chromadb-pysqlite3
 streamlit==1.28.1
 chromadb==0.4.17
 llama-index==0.11.22
 llama-index-core
 llama-index-llms-openai
-llama-index-vector-stores-chroma
+llama-index-vector-stores-chroma 
+pysqlite3-binary
+chromadb-pysqlite3

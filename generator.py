@@ -1,7 +1,3 @@
-# import pysqlite3
-# import sys
-# sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
-
 import chromadb
 import chromadb.errors
 from chromadb.errors import InvalidCollectionException
@@ -21,7 +17,6 @@ from configs import Configs
 
 load_dotenv()
 # os.environ['OPENAI_API_KEY'] = Configs.OPENAI_API_KEY
-
 
 class VectorDBManager:
     """Manages ChromaDB collection using file movement as processing tracker"""

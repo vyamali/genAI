@@ -1,9 +1,13 @@
 class Configs():
     LOG_LEVEL="INFO"
-    WRITE_LOGS=True,
+    WRITE_LOGS=True
+
     PROCESSED_DOCUMENTS_DIR= './documents/processed' 
     NEW_DOCUMENTS_DIR= './documents/new' 
-    DB_DIR= './chroma_db'
+    VECTOR_DB_DIR= './chroma_db'
+    SQLITE_DB_DIR = "./db/sqlite_data.db"
+
+
     EMBEDDING_MODEL= 'text-embedding-3-small'
     MODEL_NAME='gpt-4o-mini'
     TEMPERATURE=1

@@ -33,7 +33,8 @@ if prompt := st.chat_input("Your question"):
             chat_history = st.session_state.messages[:-1]
             
             # Generate response with context and history
-            response = response_generator.chat(
+            # response = response_generator.chat(
+            response = response_generator.sql_query(
                 query=prompt,
                 chat_history=chat_history
             )

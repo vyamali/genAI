@@ -6,7 +6,6 @@ from llama_index.vector_stores.chroma import ChromaVectorStore
 from llama_index.embeddings.openai import OpenAIEmbedding
 import chromadb
 from chromadb.errors import InvalidCollectionException
-from configs import Configs
 from typing import List
 
 class VectorDBManager:
